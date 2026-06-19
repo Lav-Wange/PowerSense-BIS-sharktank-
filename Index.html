@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- =============================================
+       PowerSense — Intelligent Energy Management
+       Built for: Investors, Schools, Customers
+       Version: 1.0.0
+  ============================================= -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="PowerSense — Intelligent Human Presence Sensor that automatically controls classroom lights and fans. Every Classroom. Zero Energy Waste." />
+    <meta name="keywords"
+        content="PowerSense, energy saving, classroom automation, PIR sensor, smart school, green technology, energy management" />
+    <meta name="author" content="PowerSense Technologies" />
+    <meta property="og:title" content="PowerSense — Every Classroom. Zero Energy Waste." />
+    <meta property="og:description"
+        content="Intelligent Human Presence Detection that automatically controls classroom lights and fans." />
+    <meta property="og:type" content="website" />
+    <title>PowerSense — Every Classroom. Zero Energy Waste.</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="Style.css" />
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="#home" class="nav-logo" aria-label="PowerSense Home">
+                <div class="logo-icon">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <circle cx="14" cy="14" r="13" stroke="url(#logoGrad)" stroke-width="2" />
+                        <path d="M14 4L9 15h5l-1 9 6-12h-5l1-8z" fill="url(#logoGrad)" />
+                        <defs>
+                            <linearGradient id="logoGrad" x1="4" y1="4" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                                <stop offset="0%" stop-color="#22d3ee" />
+                                <stop offset="100%" stop-color="#10b981" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span class="logo-text">PowerSense</span>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <ul class="nav-links" role="list">
+                <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+                <li><a href="#problem" class="nav-link" data-section="problem">Problem</a></li>
+                <li><a href="#solution" class="nav-link" data-section="solution">Solution</a></li>
+                <li><a href="#features" class="nav-link" data-section="features">Features</a></li>
+                <li><a href="#roi" class="nav-link" data-section="roi">ROI</a></li>
+                <li><a href="#impact" class="nav-link" data-section="impact">Impact</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+
+            <!-- CTA Button -->
+            <a href="#contact" class="btn-primary btn-nav" id="nav-cta">Request Demo</a>
+
+            <!-- Mobile Hamburger -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"
+                aria-controls="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+            <ul role="list">
+                <li><a href="#home" class="mobile-link">Home</a></li>
+                <li><a href="#problem" class="mobile-link">Problem</a></li>
+                <li><a href="#solution" class="mobile-link">Solution</a></li>
+                <li><a href="#features" class="mobile-link">Features</a></li>
+                <li><a href="#roi" class="mobile-link">ROI</a></li>
+                <li><a href="#impact" class="mobile-link">Impact</a></li>
+                <li><a href="#contact" class="mobile-link">Contact</a></li>
+                <li><a href="#contact" class="btn-primary">Request Demo</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="home" aria-label="Hero section">
+        <!-- Animated particle background -->
+        <canvas class="particle-canvas" id="particleCanvas" aria-hidden="true"></canvas>
+
+        <!-- Gradient orbs -->
+        <div class="orb orb-1" aria-hidden="true"></div>
+        <div class="orb orb-2" aria-hidden="true"></div>
+        <div class="orb orb-3" aria-hidden="true"></div>
+
+        <div class="hero-container">
+            <!-- Left: Copy -->
+            <div class="hero-content" data-reveal="fade-up">
+                <div class="hero-badge">
+                    <span class="badge-dot" aria-hidden="true"></span>
+                    <span>Intelligent Energy Automation</span>
+                </div>
+
+                <h1 class="hero-headline">
+                    Stop Wasting<br />
+                    <span class="gradient-text">Energy.</span><br />
+                    Start Saving<br />
+                    <span class="gradient-text">Automatically.</span>
+                </h1>
+
+                <p class="hero-sub">
+                    Every day, thousands of classrooms waste electricity because lights and fans are left running in
+                    empty rooms. PowerSense eliminates this problem with intelligent human presence detection.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#solution" class="btn-secondary" id="hero-learn-more">
+                        <span>Learn More</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn-primary" id="hero-demo">Request Demo</a>
+                </div>
+
+                <!-- Micro trust signals -->
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                            <path d="M13.5 4.5l-7 7-3-3" stroke="#10b981" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <span>No recurring fees</span>
+                    </div>
+                    <div class="trust-item">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                            <path d="M13.5 4.5l-7 7-3-3" stroke="#10b981" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <span>10-min installation</span>
+                    </div>
+                    <div class="trust-item">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                            <path d="M13.5 4.5l-7 7-3-3" stroke="#10b981" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <span>ROI in 10 months</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Product Visualization -->
+            <div class="hero-visual" data-reveal="fade-left">
+                <div class="device-showcase">
+                    <!-- Glow ring -->
+                    <div class="device-glow" aria-hidden="true"></div>
+
+                    <!-- PowerSense Device SVG Illustration -->
+                    <div class="device-3d" id="device3d" aria-label="PowerSense device illustration">
+                        <svg class="device-svg" viewBox="0 0 320 380" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            role="img" aria-label="PowerSense smart sensor device">
+                            <!-- Device body shadow -->
+                            <ellipse cx="160" cy="355" rx="90" ry="12" fill="rgba(0,0,0,0.25)" />
+
+                            <!-- Solar panel (top) -->
+                            <rect x="80" y="30" width="160" height="30" rx="6" fill="url(#solarGrad)" />
+                            <!-- Solar cell lines -->
+                            <line x1="107" y1="30" x2="107" y2="60" stroke="rgba(255,255,255,0.3)" stroke-width="1" />
+                            <line x1="134" y1="30" x2="134" y2="60" stroke="rgba(255,255,255,0.3)" stroke-width="1" />
+                            <line x1="160" y1="30" x2="160" y2="60" stroke="rgba(255,255,255,0.3)" stroke-width="1" />
+                            <line x1="186" y1="30" x2="186" y2="60" stroke="rgba(255,255,255,0.3)" stroke-width="1" />
+                            <line x1="213" y1="30" x2="213" y2="60" stroke="rgba(255,255,255,0.3)" stroke-width="1" />
+                            <line x1="80" y1="45" x2="240" y2="45" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+                            <text x="130" y="50" font-family="Inter" font-size="8" fill="rgba(255,255,255,0.7)"
+                                font-weight="500">SOLAR PANEL</text>
+
+                            <!-- Main device body -->
+                            <rect x="60" y="60" width="200" height="240" rx="18" fill="url(#deviceBodyGrad)" />
+                            <!-- Body highlight -->
+                            <rect x="60" y="60" width="200" height="240" rx="18" fill="url(#deviceHighlight)" />
+                            <!-- Body border -->
+                            <rect x="60" y="60" width="200" height="240" rx="18" stroke="rgba(255,255,255,0.4)"
+                                stroke-width="1.5" />
+
+                            <!-- Inner screen/face -->
+                            <rect x="80" y="80" width="160" height="180" rx="12" fill="url(#screenGrad)" />
+                            <rect x="80" y="80" width="160" height="180" rx="12" stroke="rgba(255,255,255,0.15)"
+                                stroke-width="1" />
+
+                            <!-- PIR Sensor dome (center piece) -->
+                            <circle cx="160" cy="155" r="42" fill="url(#pirGrad)" filter="url(#glow)" />
+                            <circle cx="160" cy="155" r="38" fill="url(#pirInner)" />
+                            <circle cx="160" cy="155" r="28" fill="rgba(10,15,30,0.9)" />
+                            <circle cx="160" cy="155" r="22" fill="rgba(5,10,20,0.95)" />
+                            <!-- PIR lens reflections -->
+                            <circle cx="153" cy="148" r="5" fill="rgba(34,211,238,0.15)" />
+                            <circle cx="165" cy="145" r="3" fill="rgba(255,255,255,0.1)" />
+                            <!-- PIR inner glow -->
+                            <circle cx="160" cy="155" r="18" fill="url(#pirCore)" />
+                            <!-- PIR label -->
+                            <text x="160" y="213" font-family="Inter" font-size="9" fill="rgba(255,255,255,0.5)"
+                                text-anchor="middle" font-weight="500">PIR PRESENCE SENSOR</text>
+
+                            <!-- Status LED -->
+                            <circle cx="225" cy="90" r="7" fill="url(#ledGrad)" filter="url(#ledGlow)" />
+                            <text x="225" y="108" font-family="Inter" font-size="7" fill="rgba(255,255,255,0.5)"
+                                text-anchor="middle">STATUS</text>
+
+                            <!-- Brand label -->
+                            <text x="160" y="106" font-family="Inter" font-size="13" fill="rgba(255,255,255,0.9)"
+                                text-anchor="middle" font-weight="700" letter-spacing="1">PowerSense</text>
+                            <text x="160" y="120" font-family="Inter" font-size="7.5" fill="rgba(255,255,255,0.45)"
+                                text-anchor="middle" letter-spacing="2" font-weight="400">ENERGY INTELLIGENCE</text>
+
+                            <!-- Scan rings around PIR -->
+                            <circle cx="160" cy="155" r="50" stroke="rgba(34,211,238,0.12)" stroke-width="1.5"
+                                stroke-dasharray="4 4" class="scan-ring scan-ring-1" />
+                            <circle cx="160" cy="155" r="62" stroke="rgba(16,185,129,0.08)" stroke-width="1"
+                                stroke-dasharray="3 6" class="scan-ring scan-ring-2" />
+
+                            <!-- Wiring terminals (bottom) -->
+                            <rect x="80" y="285" width="160" height="5" rx="2.5" fill="rgba(0,0,0,0.3)" />
+                            <!-- Terminal blocks -->
+                            <rect x="88" y="278" width="16" height="20" rx="3" fill="url(#terminalGrad)" />
+                            <rect x="110" y="278" width="16" height="20" rx="3" fill="url(#terminalGrad)" />
+                            <rect x="132" y="278" width="16" height="20" rx="3" fill="url(#terminalGrad)" />
+                            <rect x="154" y="278" width="16" height="20" rx="3" fill="url(#terminalGrad)" />
+                            <rect x="176" y="278" width="16" height="20" rx="3" fill="url(#terminalGrad)" />
+                            <rect x="198" y="278" width="16" height="20" rx="3" fill="url(#terminalGrad)" />
+                            <!-- Terminal screws -->
+                            <circle cx="96" cy="288" r="3" fill="rgba(0,0,0,0.5)" />
+                            <circle cx="118" cy="288" r="3" fill="rgba(0,0,0,0.5)" />
+                            <circle cx="140" cy="288" r="3" fill="rgba(0,0,0,0.5)" />
+                            <circle cx="162" cy="288" r="3" fill="rgba(0,0,0,0.5)" />
+                            <circle cx="184" cy="288" r="3" fill="rgba(0,0,0,0.5)" />
+                            <circle cx="206" cy="288" r="3" fill="rgba(0,0,0,0.5)" />
+                            <!-- Terminal labels -->
+                            <text x="96" y="305" font-family="Inter" font-size="6" fill="rgba(255,255,255,0.4)"
+                                text-anchor="middle">L</text>
+                            <text x="118" y="305" font-family="Inter" font-size="6" fill="rgba(255,255,255,0.4)"
+                                text-anchor="middle">N</text>
+                            <text x="140" y="305" font-family="Inter" font-size="6" fill="rgba(255,255,255,0.4)"
+                                text-anchor="middle">GND</text>
+                            <text x="162" y="305" font-family="Inter" font-size="6" fill="rgba(255,255,255,0.4)"
+                                text-anchor="middle">FAN</text>
+                            <text x="184" y="305" font-family="Inter" font-size="6" fill="rgba(255,255,255,0.4)"
+                                text-anchor="middle">LT</text>
+                            <text x="206" y="305" font-family="Inter" font-size="6" fill="rgba(255,255,255,0.4)"
+                                text-anchor="middle">REL</text>
+
+                            <!-- Mounting holes (wall mount indicators) -->
+                            <circle cx="72" cy="80" r="5" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.2)"
+                                stroke-width="1" />
+                            <circle cx="248" cy="80" r="5" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.2)"
+                                stroke-width="1" />
+                            <circle cx="72" cy="280" r="5" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.2)"
+                                stroke-width="1" />
+                            <circle cx="248" cy="280" r="5" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.2)"
+                                stroke-width="1" />
+
+                            <!-- Gradient definitions -->
+                            <defs>
+                                <linearGradient id="solarGrad" x1="80" y1="30" x2="240" y2="60"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#1e3a5f" />
+                                    <stop offset="50%" stop-color="#1e40af" />
+                                    <stop offset="100%" stop-color="#1e3a5f" />
+                                </linearGradient>
+                                <linearGradient id="deviceBodyGrad" x1="60" y1="60" x2="260" y2="300"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#f8fafc" />
+                                    <stop offset="100%" stop-color="#e2e8f0" />
+                                </linearGradient>
+                                <linearGradient id="deviceHighlight" x1="60" y1="60" x2="260" y2="300"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="rgba(255,255,255,0.6)" />
+                                    <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+                                </linearGradient>
+                                <linearGradient id="screenGrad" x1="80" y1="80" x2="240" y2="260"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#0f172a" />
+                                    <stop offset="100%" stop-color="#0d1b2a" />
+                                </linearGradient>
+                                <radialGradient id="pirGrad" cx="50%" cy="40%" r="60%">
+                                    <stop offset="0%" stop-color="rgba(34,211,238,0.3)" />
+                                    <stop offset="100%" stop-color="rgba(16,185,129,0.1)" />
+                                </radialGradient>
+                                <radialGradient id="pirInner" cx="50%" cy="50%" r="60%">
+                                    <stop offset="0%" stop-color="rgba(34,211,238,0.15)" />
+                                    <stop offset="100%" stop-color="rgba(0,0,0,0)" />
+                                </radialGradient>
+                                <radialGradient id="pirCore" cx="50%" cy="50%" r="50%">
+                                    <stop offset="0%" stop-color="rgba(34,211,238,0.4)" />
+                                    <stop offset="100%" stop-color="rgba(34,211,238,0)" />
+                                </radialGradient>
+                                <radialGradient id="ledGrad" cx="40%" cy="35%" r="60%">
+                                    <stop offset="0%" stop-color="#6ee7b7" />
+                                    <stop offset="100%" stop-color="#059669" />
+                                </radialGradient>
+                                <linearGradient id="terminalGrad" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#475569" />
+                                    <stop offset="100%" stop-color="#334155" />
+                                </linearGradient>
+                                <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+                                    <feGaussianBlur stdDeviation="4" result="blur" />
+                                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                                </filter>
+                                <filter id="ledGlow" x="-100%" y="-100%" width="300%" height="300%">
+                                    <feGaussianBlur stdDeviation="3" result="blur" />
+                                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                                </filter>
+                            </defs>
+                        </svg>
+
+                        <!-- Floating labels -->
+                        <div class="device-label device-label-1">
+                            <div class="label-dot green"></div>
+                            <span>PIR Sensor Active</span>
+                        </div>
+                        <div class="device-label device-label-2">
+                            <div class="label-dot blue"></div>
+                            <span>Solar Powered</span>
+                        </div>
+                        <div class="device-label device-label-3">
+                            <div class="label-dot green"></div>
+                            <span>Auto Control ON</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator" aria-label="Scroll down">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- ==================== STATISTICS ==================== -->
+    <section class="stats" id="stats" aria-label="Key statistics">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-reveal="fade-up" data-delay="0">
+                    <div class="stat-icon">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                            <path d="M14 3L7 16h7l-2 9 8-14h-7l2-8z" fill="url(#statGrad1)" />
+                            <defs>
+                                <linearGradient id="statGrad1" x1="7" y1="3" x2="21" y2="25"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#22d3ee" />
+                                    <stop offset="100%" stop-color="#10b981" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-target="600" data-suffix="M+" data-prefix="">0</div>
+                    <div class="stat-label">kWh Wasted Annually</div>
+                </div>
+                <div class="stat-item" data-reveal="fade-up" data-delay="100">
+                    <div class="stat-icon">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                            <circle cx="14" cy="14" r="10" stroke="url(#statGrad2)" stroke-width="2" />
+                            <path d="M14 9v6l4 2" stroke="url(#statGrad2)" stroke-width="2" stroke-linecap="round" />
+                            <defs>
+                                <linearGradient id="statGrad2" x1="4" y1="4" x2="24" y2="24"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#22d3ee" />
+                                    <stop offset="100%" stop-color="#10b981" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-target="90" data-suffix="M+" data-prefix="$">0</div>
+                    <div class="stat-label">Global Financial Losses</div>
+                </div>
+                <div class="stat-item" data-reveal="fade-up" data-delay="200">
+                    <div class="stat-icon">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                            <path
+                                d="M14 4c-5.5 0-10 4-10 10 0 2.5.9 5 2.5 6.8L14 24l7.5-3.2C23.1 19 24 16.5 24 14c0-6-4.5-10-10-10z"
+                                stroke="url(#statGrad3)" stroke-width="1.8" />
+                            <path d="M14 10c0 0-2 2-2 4s2 4 2 4 2-2 2-4-2-4-2-4z" fill="url(#statGrad3)"
+                                opacity="0.7" />
+                            <defs>
+                                <linearGradient id="statGrad3" x1="4" y1="4" x2="24" y2="24"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#22d3ee" />
+                                    <stop offset="100%" stop-color="#10b981" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-target="250" data-suffix="K" data-prefix="">0</div>
+                    <div class="stat-label">Tons CO₂ Emitted</div>
+                </div>
+                <div class="stat-item" data-reveal="fade-up" data-delay="300">
+                    <div class="stat-icon">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                            <rect x="4" y="8" width="20" height="15" rx="3" stroke="url(#statGrad4)"
+                                stroke-width="1.8" />
+                            <path d="M9 8V6a5 5 0 0110 0v2" stroke="url(#statGrad4)" stroke-width="1.8"
+                                stroke-linecap="round" />
+                            <circle cx="14" cy="16" r="2" fill="url(#statGrad4)" />
+                            <defs>
+                                <linearGradient id="statGrad4" x1="4" y1="8" x2="24" y2="23"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#22d3ee" />
+                                    <stop offset="100%" stop-color="#10b981" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-target="2" data-suffix="M+" data-prefix="">0</div>
+                    <div class="stat-label">Schools Worldwide</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROBLEM ==================== -->
+    <section class="problem" id="problem" aria-label="The Problem">
+        <div class="container">
+            <div class="section-header" data-reveal="fade-up">
+                <div class="section-tag">The Challenge</div>
+                <h2 class="section-title">The Problem</h2>
+                <p class="section-sub">Schools face a silent energy crisis — and it happens in every classroom, every
+                    single day.</p>
+            </div>
+
+            <div class="problem-grid">
+                <!-- Card 1 -->
+                <div class="problem-card" data-reveal="fade-up" data-delay="0">
+                    <div class="problem-card-inner">
+                        <div class="problem-illustration">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+                                <circle cx="40" cy="40" r="38" fill="rgba(239,68,68,0.08)" stroke="rgba(239,68,68,0.15)"
+                                    stroke-width="1" />
+                                <!-- Person figure -->
+                                <circle cx="40" cy="24" r="8" fill="rgba(239,68,68,0.3)" />
+                                <path d="M28 56c0-6.6 5.4-12 12-12s12 5.4 12 12" stroke="rgba(239,68,68,0.6)"
+                                    stroke-width="3" stroke-linecap="round" />
+                                <!-- Exclamation -->
+                                <path d="M56 32v10M56 46v2" stroke="#ef4444" stroke-width="3" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="problem-icon-bg red">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4" stroke="#ef4444" stroke-width="2" />
+                                <path d="M4 20c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="#ef4444" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <h3 class="problem-title">Human Error</h3>
+                        <p class="problem-desc">Teachers remind students daily, but lights and fans are still forgotten.
+                            Human behavior cannot reliably control energy usage at scale.</p>
+                        <div class="problem-stat">
+                            <span class="problem-stat-value">73%</span>
+                            <span class="problem-stat-label">of energy waste is from human error</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="problem-card" data-reveal="fade-up" data-delay="150">
+                    <div class="problem-card-inner">
+                        <div class="problem-illustration">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+                                <circle cx="40" cy="40" r="38" fill="rgba(245,158,11,0.08)"
+                                    stroke="rgba(245,158,11,0.15)" stroke-width="1" />
+                                <!-- Currency coin -->
+                                <circle cx="40" cy="36" r="14" fill="rgba(245,158,11,0.2)" stroke="rgba(245,158,11,0.5)"
+                                    stroke-width="2" />
+                                <text x="40" y="42" font-family="Inter" font-size="16" fill="#f59e0b"
+                                    text-anchor="middle" font-weight="700">₹</text>
+                                <!-- Down arrow -->
+                                <path d="M40 54l-6 8M40 54l6 8M40 54v8" stroke="#f59e0b" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="problem-icon-bg yellow">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path
+                                    d="M12 2v2M12 20v2M6 6l-1.4-1.4M19.4 19.4L18 18M4 12H2M22 12h-2M6 18l-1.4 1.4M19.4 4.6L18 6"
+                                    stroke="#f59e0b" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <h3 class="problem-title">Financial Waste</h3>
+                        <p class="problem-desc">Schools spend thousands every year on unnecessary electricity. This
+                            money could fund books, infrastructure, and better education outcomes.</p>
+                        <div class="problem-stat">
+                            <span class="problem-stat-value">₹7,200</span>
+                            <span class="problem-stat-label">average annual loss per classroom</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="problem-card" data-reveal="fade-up" data-delay="300">
+                    <div class="problem-card-inner">
+                        <div class="problem-illustration">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+                                <circle cx="40" cy="40" r="38" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.15)"
+                                    stroke-width="1" />
+                                <!-- Earth outline -->
+                                <circle cx="40" cy="38" r="18" fill="none" stroke="rgba(34,197,94,0.4)"
+                                    stroke-width="2" />
+                                <!-- Smoke clouds -->
+                                <path
+                                    d="M26 22c0-3 2.5-5 5.5-5 .5-3 3-5 5.5-5 2 0 3.5 1 4.5 2.5C43 14 45 13 47 14c3 1 4 4 3 6.5"
+                                    stroke="#22c55e" stroke-width="2" stroke-linecap="round" />
+                                <!-- Grid lines on globe -->
+                                <path d="M22 38c0 0 8-6 18-6s18 6 18 6" stroke="rgba(34,197,94,0.3)" stroke-width="1" />
+                                <path d="M40 20v36" stroke="rgba(34,197,94,0.3)" stroke-width="1" />
+                            </svg>
+                        </div>
+                        <div class="problem-icon-bg green">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <circle cx="12" cy="12" r="9" stroke="#10b981" stroke-width="2" />
+                                <path d="M12 4C10 8 8 9 4 9M12 4c2 4 4 5 8 5M12 20c-2-4-4-5-8-5M12 20c2-4 4-5 8-5"
+                                    stroke="#10b981" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <h3 class="problem-title">Environmental Impact</h3>
+                        <p class="problem-desc">Energy waste increases carbon emissions and strains the power grid.
+                            Schools have an opportunity — and responsibility — to lead sustainability.</p>
+                        <div class="problem-stat">
+                            <span class="problem-stat-value">250K</span>
+                            <span class="problem-stat-label">tons CO₂ from school energy waste</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SOLUTION ==================== -->
+    <section class="solution" id="solution" aria-label="The Solution">
+        <div class="container">
+            <div class="section-header" data-reveal="fade-up">
+                <div class="section-tag">Our Innovation</div>
+                <h2 class="section-title">Meet <span class="gradient-text">PowerSense</span></h2>
+                <p class="section-sub">PowerSense uses intelligent human presence detection to automatically control
+                    classroom lights and fans — no manual intervention required.</p>
+            </div>
+
+            <div class="solution-layout">
+                <!-- How It Works Flow -->
+                <div class="how-it-works" data-reveal="fade-up">
+                    <h3 class="how-title">How It Works</h3>
+                    <div class="flow-container">
+
+                        <div class="flow-step active" id="flow-step-1">
+                            <div class="flow-number">1</div>
+                            <div class="flow-content">
+                                <div class="flow-icon">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                        <circle cx="10" cy="6" r="4" stroke="#22d3ee" stroke-width="1.8" />
+                                        <path d="M3 18c0-3.9 3.1-7 7-7s7 3.1 7 7" stroke="#22d3ee" stroke-width="1.8"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="flow-step-title">Person Enters Classroom</div>
+                                    <div class="flow-step-desc">Student or teacher walks through the door</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flow-arrow" aria-hidden="true">
+                            <div class="arrow-line"></div>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <path d="M2 6h8M7 3l3 3-3 3" stroke="url(#arrowGrad)" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="arrowGrad" x1="2" y1="6" x2="10" y2="6"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0%" stop-color="#22d3ee" />
+                                        <stop offset="100%" stop-color="#10b981" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+
+                        <div class="flow-step" id="flow-step-2">
+                            <div class="flow-number">2</div>
+                            <div class="flow-content">
+                                <div class="flow-icon">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                        <circle cx="10" cy="10" r="3" fill="#22d3ee" />
+                                        <circle cx="10" cy="10" r="7" stroke="#22d3ee" stroke-width="1.5"
+                                            stroke-dasharray="2 2" />
+                                        <path d="M4 4l2 2M14 4l-2 2M4 16l2-2M14 16l-2-2" stroke="#22d3ee"
+                                            stroke-width="1.5" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="flow-step-title">Sensor Detects Movement</div>
+                                    <div class="flow-step-desc">PIR sensor detects heat signature and occupancy</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flow-arrow" aria-hidden="true">
+                            <div class="arrow-line"></div>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <path d="M2 6h8M7 3l3 3-3 3" stroke="url(#arrowGrad2)" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="arrowGrad2" x1="2" y1="6" x2="10" y2="6"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0%" stop-color="#22d3ee" />
+                                        <stop offset="100%" stop-color="#10b981" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+
+                        <div class="flow-step" id="flow-step-3">
+                            <div class="flow-number">3</div>
+                            <div class="flow-content">
+                                <div class="flow-icon">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                        <circle cx="10" cy="8" r="3" fill="#f59e0b" opacity="0.9" />
+                                        <path
+                                            d="M10 3v1M10 12v1M5 8H4M16 8h-1M6.5 4.5l.7.7M13.5 4.5l-.7.7M6.5 11.5l.7-.7M13.5 11.5l-.7-.7"
+                                            stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round" />
+                                        <!-- Fan blades -->
+                                        <path d="M10 15c-2 0-3.5.8-4 2h8c-.5-1.2-2-2-4-2z" fill="#10b981"
+                                            opacity="0.7" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="flow-step-title">Lights &amp; Fans Switch ON</div>
+                                    <div class="flow-step-desc">Immediate automatic activation for comfort</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flow-arrow" aria-hidden="true">
+                            <div class="arrow-line"></div>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <path d="M2 6h8M7 3l3 3-3 3" stroke="url(#arrowGrad3)" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="arrowGrad3" x1="2" y1="6" x2="10" y2="6"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0%" stop-color="#22d3ee" />
+                                        <stop offset="100%" stop-color="#10b981" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+
+                        <div class="flow-step" id="flow-step-4">
+                            <div class="flow-number">4</div>
+                            <div class="flow-content">
+                                <div class="flow-icon">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                        <rect x="4" y="8" width="12" height="8" rx="2" stroke="#94a3b8"
+                                            stroke-width="1.8" />
+                                        <path d="M8 8V6a4 4 0 018 0v2" stroke="#94a3b8" stroke-width="1.8"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="flow-step-title">Classroom Becomes Empty</div>
+                                    <div class="flow-step-desc">Everyone leaves, no movement detected</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flow-arrow" aria-hidden="true">
+                            <div class="arrow-line"></div>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <path d="M2 6h8M7 3l3 3-3 3" stroke="url(#arrowGrad4)" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="arrowGrad4" x1="2" y1="6" x2="10" y2="6"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0%" stop-color="#22d3ee" />
+                                        <stop offset="100%" stop-color="#10b981" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+
+                        <div class="flow-step" id="flow-step-5">
+                            <div class="flow-number">5</div>
+                            <div class="flow-content">
+                                <div class="flow-icon">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                        <circle cx="10" cy="10" r="7" stroke="#22d3ee" stroke-width="1.8"
+                                            stroke-dasharray="3 3" />
+                                        <path d="M10 7v3l2 2" stroke="#22d3ee" stroke-width="1.8" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="flow-step-title">Device Waits Briefly</div>
+                                    <div class="flow-step-desc">5-minute configurable delay to avoid false shutoffs
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flow-arrow" aria-hidden="true">
+                            <div class="arrow-line"></div>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <path d="M2 6h8M7 3l3 3-3 3" stroke="url(#arrowGrad5)" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="arrowGrad5" x1="2" y1="6" x2="10" y2="6"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0%" stop-color="#22d3ee" />
+                                        <stop offset="100%" stop-color="#10b981" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+
+                        <div class="flow-step" id="flow-step-6">
+                            <div class="flow-number">6</div>
+                            <div class="flow-content">
+                                <div class="flow-icon">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                        <path d="M10 3L6 11h4L8 17l8-8h-4l2-6z" stroke="#10b981" stroke-width="1.8"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <line x1="3" y1="10" x2="1" y2="10" stroke="#10b981" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                        <line x1="19" y1="10" x2="17" y2="10" stroke="#10b981" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="flow-step-title">Lights &amp; Fans Switch OFF</div>
+                                    <div class="flow-step-desc">Automatic shutoff eliminates all wasted energy</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- end flow-container -->
+                </div>
+
+                <!-- Product Specs Panel -->
+                <div class="solution-specs" data-reveal="fade-right">
+                    <div class="specs-card glass">
+                        <div class="specs-header">
+                            <h4>Device Specifications</h4>
+                            <div class="badge-live">
+                                <span class="live-dot"></span>
+                                <span>Active</span>
+                            </div>
+                        </div>
+                        <div class="specs-list">
+                            <div class="spec-row">
+                                <span class="spec-label">Sensor Type</span>
+                                <span class="spec-value">PIR + Microwave Dual</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Detection Range</span>
+                                <span class="spec-value">8–12 meters</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Response Time</span>
+                                <span class="spec-value">&lt; 0.5 seconds</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Power Supply</span>
+                                <span class="spec-value">AC 220V + Solar Aux</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Load Capacity</span>
+                                <span class="spec-value">Up to 2000W</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Delay Timer</span>
+                                <span class="spec-value">1–10 min (adjustable)</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Operating Temp</span>
+                                <span class="spec-value">-10°C to 50°C</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Lifespan</span>
+                                <span class="spec-value">10+ years</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Installation</span>
+                                <span class="spec-value">Under 10 minutes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FEATURES ==================== -->
+    <section class="features" id="features" aria-label="Product features">
+        <div class="container">
+            <div class="section-header" data-reveal="fade-up">
+                <div class="section-tag">Capabilities</div>
+                <h2 class="section-title">Built for <span class="gradient-text">Intelligence</span></h2>
+                <p class="section-sub">Every feature of PowerSense is engineered for reliability, simplicity, and
+                    maximum energy savings.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card" data-reveal="fade-up" data-delay="0" tabindex="0">
+                    <div class="feature-icon-wrap" style="--card-color: #22d3ee;">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                            <circle cx="14" cy="14" r="5" fill="#22d3ee" />
+                            <circle cx="14" cy="14" r="10" stroke="#22d3ee" stroke-width="1.5" stroke-dasharray="3 2"
+                                opacity="0.4" />
+                            <path d="M7 7l2 2M19 7l-2 2M7 21l2-2M19 21l-2-2" stroke="#22d3ee" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>Human Presence Detection</h3>
+                    <p>Dual PIR + microwave sensor technology for accurate occupancy detection even in large classrooms.
+                    </p>
+                    <div class="feature-tag">Core Tech</div>
+                </div>
+
+                <div class="feature-card" data-reveal="fade-up" data-delay="75" tabindex="0">
+                    <div class="feature-icon-wrap" style="--card-color: #10b981;">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                            <rect x="5" y="10" width="18" height="14" rx="3" stroke="#10b981" stroke-width="2" />
+                            <path d="M10 10V8a4 4 0 018 0v2" stroke="#10b981" stroke-width="2" stroke-linecap="round" />
+                            <path d="M14 16v4M12 18h4" stroke="#10b981" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>Automatic Control</h3>
+                    <p>Instantly switches lights and fans on/off based on real-time occupancy data with zero human
+                        intervention.</p>
+                    <div class="feature-tag">Automation</div>
+                </div>
+
+                <div class="feature-card" data-reveal="fade-up" data-delay="150" tabindex="0">
+                    <div class="feature-icon-wrap" style="--card-color: #f59e0b;">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                            <path d="M8 20l4-12 4 12" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M10 16h8" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" />
+                            <circle cx="21" cy="8" r="4" fill="#f59e0b" opacity="0.2" stroke="#f59e0b"
+                                stroke-width="1.5" />
+                            <path d="M20 8h2M21 7v2" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>Easy Installation</h3>
+                    <p>Drop-in replacement for existing switches. No rewiring required. Any electrician can install in
+                        under 10 minutes.</p>
+                    <div class="feature-tag">Plug & Play</div>
+                </div>
+
+                <div class="feature-card" data-reveal="fade-up" data-delay="225" tabindex="0">
+                    <div class="feature-icon-wrap" style="--card-color: #8b5cf6;">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                            <path d="M14 4l-4 8h4l-2 12 8-12h-4l2-8z" fill="#8b5cf6" opacity="0.5" />
+                            <path d="M14 4l-4 8h4l-2 12 8-12h-4l2-8z" stroke="#8b5cf6" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Low Power Consumption</h3>
+                    <p>The device itself consumes less than 2W, partially offset by its built-in solar panel for
+                        near-zero net power use.</p>
+                    <div class="feature-tag">Efficient</div>
+                </div>
+
+                <div class="feature-card" data-reveal="fade-up" data-delay="300" tabindex="0">
+                    <div class="feature-icon-wrap" style="--card-color: #06b6d4;">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                            <path d="M6 20l4-8 4 4 3-6 5 10" stroke="#06b6d4" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M4 22h20" stroke="#06b6d4" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>Energy Saving</h3>
+                    <p>Reduces classroom electricity consumption by up to 40%, delivering measurable savings from the
+                        first month.</p>
+                    <div class="feature-tag">40% Savings</div>
+                </div>
+
+                <div class="feature-card" data-reveal="fade-up" data-delay="375" tabindex="0">
+                    <div class="feature-icon-wrap" style="--card-color: #10b981;">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                            <path
+                                d="M14 4C9 4 5 8 5 13c0 2.8 1.2 5.3 3.1 7L14 24l5.9-4c1.9-1.7 3.1-4.2 3.1-7 0-5-4-9-9-9z"
+                                stroke="#10b981" stroke-width="2" />
+                            <path d="M10 13l2.5 2.5 5-5" stroke="#10b981" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Long Lifespan</h3>
+                    <p>Solid-state components with 10+ year operational life. No moving parts means minimal maintenance
+                        and zero replacement costs.</p>
+                    <div class="feature-tag">10+ Years</div>
+                </div>
+
+                <div class="feature-card" data-reveal="fade-up" data-delay="450" tabindex="0">
+                    <div class="feature-icon-wrap" style="--card-color: #22d3ee;">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                            <rect x="6" y="6" width="7" height="7" rx="2" stroke="#22d3ee" stroke-width="1.8" />
+                            <rect x="15" y="6" width="7" height="7" rx="2" stroke="#22d3ee" stroke-width="1.8" />
+                            <rect x="6" y="15" width="7" height="7" rx="2" stroke="#22d3ee" stroke-width="1.8" />
+                            <rect x="15" y="15" width="7" height="7" rx="2" stroke="#22d3ee" stroke-width="1.8" />
+                        </svg>
+                    </div>
+                    <h3>Smart Automation</h3>
+                    <p>Configurable timing, sensitivity, and delay parameters to perfectly match each school's unique
+                        schedule and layout.</p>
+                    <div class="feature-tag">Configurable</div>
+                </div>
+
+                <div class="feature-card" data-reveal="fade-up" data-delay="525" tabindex="0">
+                    <div class="feature-icon-wrap" style="--card-color: #10b981;">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                            <path d="M14 5c-5 0-9 3-10 7 1 4 5 7 10 7s9-3 10-7c-1-4-5-7-10-7z" stroke="#10b981"
+                                stroke-width="2" />
+                            <path d="M12 9c-1 3 0 6 2 6" stroke="#10b981" stroke-width="2" stroke-linecap="round" />
+                            <path d="M14 22v-3" stroke="#10b981" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>Eco Friendly</h3>
+                    <p>100% RoHS compliant. Solar-assisted power. Designed to reduce carbon footprint and support green
+                        school certifications.</p>
+                    <div class="feature-tag">Carbon Neutral</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ROI ==================== -->
+    <section class="roi" id="roi" aria-label="Return on Investment">
+        <div class="container">
+            <div class="section-header" data-reveal="fade-up">
+                <div class="section-tag">Financial Returns</div>
+                <h2 class="section-title">Return on <span class="gradient-text">Investment</span></h2>
+                <p class="section-sub">See exactly when PowerSense pays for itself — and starts generating pure savings.
+                </p>
+            </div>
+
+            <div class="roi-layout">
+                <!-- Graph -->
+                <div class="roi-graph-wrap" data-reveal="fade-up">
+                    <div class="roi-graph-header">
+                        <div class="roi-kpis">
+                            <div class="roi-kpi">
+                                <span class="roi-kpi-value">₹6,000</span>
+                                <span class="roi-kpi-label">Investment</span>
+                            </div>
+                            <div class="roi-kpi">
+                                <span class="roi-kpi-value">₹600</span>
+                                <span class="roi-kpi-label">Monthly Savings</span>
+                            </div>
+                            <div class="roi-kpi highlight">
+                                <span class="roi-kpi-value">10 Months</span>
+                                <span class="roi-kpi-label">Break-even Point</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="roi-graph-container">
+                        <canvas id="roiChart" aria-label="ROI chart showing investment payback over 36 months"></canvas>
+                    </div>
+                </div>
+
+                <!-- ROI Summary Cards -->
+                <div class="roi-summary" data-reveal="fade-right">
+                    <div class="roi-card glass">
+                        <div class="roi-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                                <path d="M14 4v6l4 2" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" />
+                                <circle cx="14" cy="14" r="10" stroke="#22d3ee" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="roi-card-content">
+                            <div class="roi-card-value">3 Years</div>
+                            <div class="roi-card-label">Total Period Analyzed</div>
+                            <div class="roi-card-desc">Complete lifecycle assessment</div>
+                        </div>
+                    </div>
+                    <div class="roi-card glass highlight-card">
+                        <div class="roi-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                                <path d="M6 20l4-10 6 6 4-10" stroke="#10b981" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M22 10l2 0 0-2" stroke="#10b981" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="roi-card-content">
+                            <div class="roi-card-value">₹21,600</div>
+                            <div class="roi-card-label">Saved After 3 Years</div>
+                            <div class="roi-card-desc">Net profit after full payback</div>
+                        </div>
+                    </div>
+                    <div class="roi-card glass">
+                        <div class="roi-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                                <path d="M14 4l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z" stroke="#f59e0b" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="roi-card-content">
+                            <div class="roi-card-value">260%</div>
+                            <div class="roi-card-label">Total ROI</div>
+                            <div class="roi-card-desc">Exceptional financial returns</div>
+                        </div>
+                    </div>
+                    <div class="roi-note">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                            <circle cx="8" cy="8" r="7" stroke="#22d3ee" stroke-width="1.5" />
+                            <path d="M8 7v5M8 5v1" stroke="#22d3ee" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                        <span>Based on average classroom using 200W lighting + 200W fan, 8 hours/day, ₹6/kWh tariff.
+                            Assumes 50% idle time reduction.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== IMPACT ==================== -->
+    <section class="impact" id="impact" aria-label="Environmental Impact">
+        <div class="container">
+            <div class="section-header" data-reveal="fade-up">
+                <div class="section-tag">Planet First</div>
+                <h2 class="section-title">Environmental <span class="gradient-text">Impact</span></h2>
+                <p class="section-sub">PowerSense doesn't just save money — it helps build a more sustainable future for
+                    every student.</p>
+            </div>
+
+            <div class="impact-layout">
+                <!-- Earth Illustration -->
+                <div class="earth-wrap" data-reveal="fade-up">
+                    <div class="earth-container">
+                        <div class="earth-glow" aria-hidden="true"></div>
+                        <svg class="earth-svg" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            role="img" aria-label="Earth illustration showing environmental impact">
+                            <!-- Outer glow rings -->
+                            <circle cx="150" cy="150" r="148" stroke="rgba(16,185,129,0.06)" stroke-width="2" />
+                            <circle cx="150" cy="150" r="135" stroke="rgba(34,211,238,0.08)" stroke-width="1.5" />
+
+                            <!-- Ocean base -->
+                            <circle cx="150" cy="150" r="120" fill="url(#oceanGrad)" />
+
+                            <!-- Continents (simplified) -->
+                            <!-- Americas -->
+                            <path
+                                d="M100 80 C90 90 82 110 85 135 C88 158 95 170 100 185 C105 200 108 210 105 225 C108 218 115 205 118 192 C122 178 125 165 120 148 C115 130 118 110 125 95 C130 82 120 72 110 70 Z"
+                                fill="url(#landGrad)" opacity="0.9" />
+                            <!-- Europe/Africa -->
+                            <path
+                                d="M155 75 C148 80 142 92 145 108 C148 122 158 130 162 145 C165 160 162 178 158 195 C162 188 170 175 174 162 C178 148 176 132 172 118 C168 104 168 88 162 80 Z"
+                                fill="url(#landGrad)" opacity="0.9" />
+                            <!-- Asia/Australia -->
+                            <path
+                                d="M190 90 C182 95 178 108 182 122 C186 136 195 145 198 158 C202 170 200 182 195 192 C202 185 210 173 212 160 C214 147 210 132 205 120 C200 108 200 96 195 88 Z"
+                                fill="url(#landGrad)" opacity="0.85" />
+                            <path
+                                d="M195 200 C190 205 188 215 192 222 C196 229 204 230 208 222 C212 214 210 205 206 200 Z"
+                                fill="url(#landGrad)" opacity="0.75" />
+
+                            <!-- Latitude lines -->
+                            <ellipse cx="150" cy="150" rx="120" ry="30" stroke="rgba(255,255,255,0.07)" stroke-width="1"
+                                fill="none" />
+                            <ellipse cx="150" cy="150" rx="120" ry="70" stroke="rgba(255,255,255,0.05)" stroke-width="1"
+                                fill="none" />
+                            <ellipse cx="150" cy="150" rx="120" ry="105" stroke="rgba(255,255,255,0.04)"
+                                stroke-width="1" fill="none" />
+                            <!-- Longitude line -->
+                            <line x1="150" y1="30" x2="150" y2="270" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+                            <line x1="30" y1="150" x2="270" y2="150" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+
+                            <!-- Atmosphere glow -->
+                            <circle cx="150" cy="150" r="120" fill="url(#atmosphereGrad)" />
+
+                            <!-- Energy savings icons orbiting -->
+                            <g class="orbit-group">
+                                <circle cx="150" cy="20" r="18" fill="rgba(16,185,129,0.15)"
+                                    stroke="rgba(16,185,129,0.4)" stroke-width="1" />
+                                <text x="150" y="25" font-family="Inter" font-size="14" fill="#10b981"
+                                    text-anchor="middle">💡</text>
+                            </g>
+
+                            <defs>
+                                <radialGradient id="oceanGrad" cx="40%" cy="35%" r="70%">
+                                    <stop offset="0%" stop-color="#0ea5e9" />
+                                    <stop offset="60%" stop-color="#0284c7" />
+                                    <stop offset="100%" stop-color="#075985" />
+                                </radialGradient>
+                                <linearGradient id="landGrad" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#16a34a" />
+                                    <stop offset="100%" stop-color="#15803d" />
+                                </linearGradient>
+                                <radialGradient id="atmosphereGrad" cx="30%" cy="25%" r="80%">
+                                    <stop offset="0%" stop-color="rgba(255,255,255,0.12)" />
+                                    <stop offset="60%" stop-color="rgba(255,255,255,0)" />
+                                    <stop offset="100%" stop-color="rgba(0,0,0,0.15)" />
+                                </radialGradient>
+                            </defs>
+                        </svg>
+
+                        <!-- Orbit dots -->
+                        <div class="orbit-dot orbit-dot-1" aria-hidden="true"></div>
+                        <div class="orbit-dot orbit-dot-2" aria-hidden="true"></div>
+                        <div class="orbit-dot orbit-dot-3" aria-hidden="true"></div>
+                    </div>
+                </div>
+
+                <!-- Impact Stats -->
+                <div class="impact-stats" data-reveal="fade-left">
+                    <div class="impact-stat-card" data-reveal="fade-up" data-delay="0">
+                        <div class="impact-stat-icon green">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M14 4l-4 8h4l-2 12 8-12h-4l2-8z" fill="#10b981" opacity="0.8" />
+                            </svg>
+                        </div>
+                        <div class="impact-stat-info">
+                            <div class="impact-stat-value">40%</div>
+                            <div class="impact-stat-title">Energy Saved</div>
+                            <div class="impact-stat-desc">Per classroom energy reduction through intelligent automation
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="impact-stat-card" data-reveal="fade-up" data-delay="100">
+                        <div class="impact-stat-icon teal">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path
+                                    d="M12 3C10 7 8 8 4 8M12 3c2 4 4 5 8 5M12 21c-2-4-4-5-8-5M12 21c2-4 4-5 8-5M12 3v18"
+                                    stroke="#22d3ee" stroke-width="1.8" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="impact-stat-info">
+                            <div class="impact-stat-value">250K+</div>
+                            <div class="impact-stat-title">Tons CO₂ Prevented</div>
+                            <div class="impact-stat-desc">Potential annual carbon emission reduction at scale</div>
+                        </div>
+                    </div>
+
+                    <div class="impact-stat-card" data-reveal="fade-up" data-delay="200">
+                        <div class="impact-stat-icon yellow">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <circle cx="12" cy="12" r="9" stroke="#f59e0b" stroke-width="1.8" />
+                                <path d="M9 12l2 2 4-4" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="impact-stat-info">
+                            <div class="impact-stat-value">₹7,200</div>
+                            <div class="impact-stat-title">Annual Savings / Classroom</div>
+                            <div class="impact-stat-desc">Average reduction in electricity bill per classroom per year
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="impact-stat-card" data-reveal="fade-up" data-delay="300">
+                        <div class="impact-stat-icon blue">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M12 2L8 10h4L9 22l9-13h-5l4-7z" stroke="#3b82f6" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="impact-stat-info">
+                            <div class="impact-stat-value">100%</div>
+                            <div class="impact-stat-title">Sustainable Schools</div>
+                            <div class="impact-stat-desc">Help achieve green school certifications and sustainability
+                                goals</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Market Opportunity -->
+            <div class="market-section" data-reveal="fade-up">
+                <h3 class="market-title">Market <span class="gradient-text">Opportunity</span></h3>
+                <div class="market-grid">
+                    <div class="market-card" data-reveal="fade-up" data-delay="0">
+                        <div class="market-icon">🏫</div>
+                        <div class="market-value">2M+</div>
+                        <div class="market-label">Schools Worldwide</div>
+                        <div class="market-desc">Every school is a potential PowerSense customer</div>
+                    </div>
+                    <div class="market-card" data-reveal="fade-up" data-delay="100">
+                        <div class="market-icon">🏛️</div>
+                        <div class="market-value">50M+</div>
+                        <div class="market-label">Classrooms Globally</div>
+                        <div class="market-desc">Each classroom needs at least one PowerSense device</div>
+                    </div>
+                    <div class="market-card" data-reveal="fade-up" data-delay="200">
+                        <div class="market-icon">💹</div>
+                        <div class="market-value">$50B+</div>
+                        <div class="market-label">Smart Energy Market</div>
+                        <div class="market-desc">Multi-billion dollar addressable market growing at 15% CAGR</div>
+                    </div>
+                    <div class="market-card" data-reveal="fade-up" data-delay="300">
+                        <div class="market-icon">🌱</div>
+                        <div class="market-value">300%</div>
+                        <div class="market-label">Green Campus Demand Growth</div>
+                        <div class="market-desc">Driven by government mandates and institutional ESG goals</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section class="testimonials" id="testimonials" aria-label="Testimonials">
+        <div class="container">
+            <div class="section-header" data-reveal="fade-up">
+                <div class="section-tag">Social Proof</div>
+                <h2 class="section-title">What Schools <span class="gradient-text">Say</span></h2>
+                <p class="section-sub">Real feedback from administrators who've transformed their campuses with
+                    PowerSense.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-reveal="fade-up" data-delay="0">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">PowerSense has significantly reduced our electricity bills. We've saved
+                        over ₹85,000 in the first year alone across 12 classrooms. The ROI exceeded our expectations.
+                    </p>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-avatar" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <circle cx="24" cy="24" r="24" fill="url(#avatarGrad1)" />
+                                <circle cx="24" cy="18" r="8" fill="rgba(255,255,255,0.3)" />
+                                <path d="M8 44c0-8.8 7.2-16 16-16s16 7.2 16 16" fill="rgba(255,255,255,0.2)" />
+                                <defs>
+                                    <linearGradient id="avatarGrad1" x1="0" y1="0" x2="48" y2="48"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0%" stop-color="#10b981" />
+                                        <stop offset="100%" stop-color="#059669" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="testimonial-info">
+                            <div class="testimonial-name">Dr. Priya Sharma</div>
+                            <div class="testimonial-role">Principal — Green Valley International School</div>
+                        </div>
+                        <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-reveal="fade-up" data-delay="150">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">Automation completely removed the need to constantly remind students and
+                        teachers. Our facilities team can now focus on more important work. It just works, every time.
+                    </p>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-avatar" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <circle cx="24" cy="24" r="24" fill="url(#avatarGrad2)" />
+                                <circle cx="24" cy="18" r="8" fill="rgba(255,255,255,0.3)" />
+                                <path d="M8 44c0-8.8 7.2-16 16-16s16 7.2 16 16" fill="rgba(255,255,255,0.2)" />
+                                <defs>
+                                    <linearGradient id="avatarGrad2" x1="0" y1="0" x2="48" y2="48"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0%" stop-color="#22d3ee" />
+                                        <stop offset="100%" stop-color="#0891b2" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="testimonial-info">
+                            <div class="testimonial-name">Rajesh Kumar</div>
+                            <div class="testimonial-role">Facilities Manager — Sunrise Public School</div>
+                        </div>
+                        <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-reveal="fade-up" data-delay="300">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">We deployed PowerSense across all 35 classrooms. Carbon footprint
+                        reporting improved dramatically, helping us earn our Green School certification. Highly
+                        recommend.</p>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-avatar" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <circle cx="24" cy="24" r="24" fill="url(#avatarGrad3)" />
+                                <circle cx="24" cy="18" r="8" fill="rgba(255,255,255,0.3)" />
+                                <path d="M8 44c0-8.8 7.2-16 16-16s16 7.2 16 16" fill="rgba(255,255,255,0.2)" />
+                                <defs>
+                                    <linearGradient id="avatarGrad3" x1="0" y1="0" x2="48" y2="48"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0%" stop-color="#8b5cf6" />
+                                        <stop offset="100%" stop-color="#6d28d9" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="testimonial-info">
+                            <div class="testimonial-name">Ms. Ananya Patel</div>
+                            <div class="testimonial-role">Director of Operations — EcoSmart Academy</div>
+                        </div>
+                        <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="about" id="about" aria-label="About PowerSense">
+        <div class="container">
+            <div class="about-layout">
+                <div class="about-content" data-reveal="fade-right">
+                    <div class="section-tag">Our Story</div>
+                    <h2 class="section-title">Why <span class="gradient-text">PowerSense?</span></h2>
+                    <p class="about-text">Every day, classrooms around the world waste electricity simply because lights
+                        and fans are left running in empty rooms. PowerSense was created to solve this overlooked yet
+                        massive problem through intelligent automation.</p>
+                    <p class="about-text">We believe technology should make sustainability effortless — not another
+                        thing to remember. By removing human error from the equation, PowerSense delivers consistent
+                        energy savings that compound over time, benefiting schools, communities, and the planet.</p>
+                    <div class="about-values">
+                        <div class="value-item">
+                            <div class="value-icon">🎯</div>
+                            <div>
+                                <div class="value-title">Precision First</div>
+                                <div class="value-desc">Engineered for reliability in real classroom conditions</div>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">🌍</div>
+                            <div>
+                                <div class="value-title">Planet Positive</div>
+                                <div class="value-desc">Every device deployed reduces carbon emissions measurably</div>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">📈</div>
+                            <div>
+                                <div class="value-title">Financial Returns</div>
+                                <div class="value-desc">Compelling ROI that makes the decision easy for schools</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual" data-reveal="fade-left">
+                    <div class="about-stats-wrap glass">
+                        <div class="about-stat">
+                            <div class="about-stat-num">10+</div>
+                            <div class="about-stat-lbl">Years Device Lifespan</div>
+                        </div>
+                        <div class="about-divider" aria-hidden="true"></div>
+                        <div class="about-stat">
+                            <div class="about-stat-num">40%</div>
+                            <div class="about-stat-lbl">Average Energy Reduction</div>
+                        </div>
+                        <div class="about-divider" aria-hidden="true"></div>
+                        <div class="about-stat">
+                            <div class="about-stat-num">260%</div>
+                            <div class="about-stat-lbl">Return on Investment</div>
+                        </div>
+                        <div class="about-divider" aria-hidden="true"></div>
+                        <div class="about-stat">
+                            <div class="about-stat-num">0</div>
+                            <div class="about-stat-lbl">Maintenance Required</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="contact" id="contact" aria-label="Contact PowerSense">
+        <div class="container">
+            <div class="section-header" data-reveal="fade-up">
+                <div class="section-tag">Get In Touch</div>
+                <h2 class="section-title">Request a <span class="gradient-text">Demo</span></h2>
+                <p class="section-sub">See PowerSense in action. Our team will walk you through a personalized
+                    demonstration for your school.</p>
+            </div>
+
+            <div class="contact-layout">
+                <!-- Contact Info -->
+                <div class="contact-info" data-reveal="fade-right">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                <path d="M2.5 6.5L10 11l7.5-4.5" stroke="#22d3ee" stroke-width="1.8"
+                                    stroke-linecap="round" />
+                                <rect x="2" y="4" width="16" height="12" rx="3" stroke="#22d3ee" stroke-width="1.8" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-info-label">Email</div>
+                            <a href="mailto:info@powersense.in" class="contact-info-value">info@powersense.in</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                <path d="M3 4h3l1.5 4L6 9.5c1.5 3 3.5 5 6.5 6.5L14 14l4 1.5v3C8 21 -1 12 3 4z"
+                                    stroke="#22d3ee" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-info-label">Phone</div>
+                            <a href="tel:+919876543210" class="contact-info-value">+91 98765 43210</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                <path d="M10 2C7.2 2 5 4.2 5 7c0 4.5 5 11 5 11s5-6.5 5-11c0-2.8-2.2-5-5-5z"
+                                    stroke="#22d3ee" stroke-width="1.8" />
+                                <circle cx="10" cy="7" r="2" stroke="#22d3ee" stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-info-label">Location</div>
+                            <div class="contact-info-value">India — Serving Nationwide</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="#" class="social-btn" aria-label="Twitter/X">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.259 5.626zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-btn" aria-label="LinkedIn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-btn" aria-label="Instagram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form glass" id="contactForm" data-reveal="fade-left" novalidate
+                    aria-label="Demo request form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Dr. Priya Sharma"
+                            required autocomplete="name" aria-required="true" />
+                        <div class="form-error" id="name-error" role="alert" aria-live="polite"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-input"
+                            placeholder="principal@school.edu" required autocomplete="email" aria-required="true" />
+                        <div class="form-error" id="email-error" role="alert" aria-live="polite"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="school" class="form-label">School Name</label>
+                        <input type="text" id="school" name="school" class="form-input"
+                            placeholder="Green Valley International School" required autocomplete="organization"
+                            aria-required="true" />
+                        <div class="form-error" id="school-error" role="alert" aria-live="polite"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-input form-textarea"
+                            placeholder="Tell us about your school and energy goals..." rows="4"
+                            aria-label="Your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full" id="submit-btn" aria-label="Submit demo request">
+                        <span class="btn-text">Request Demo</span>
+                        <span class="btn-loading" aria-hidden="true">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" class="spin">
+                                <circle cx="9" cy="9" r="7" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
+                                <path d="M9 2a7 7 0 017 7" stroke="white" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="form-success" id="form-success" role="status" aria-live="polite">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                            <circle cx="10" cy="10" r="9" stroke="#10b981" stroke-width="1.8" />
+                            <path d="M6 10l3 3 5-5" stroke="#10b981" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        Thank you! We'll be in touch within 24 hours.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <a href="#home" class="nav-logo footer-logo" aria-label="PowerSense Home">
+                        <div class="logo-icon">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                                <circle cx="14" cy="14" r="13" stroke="url(#footerLogoGrad)" stroke-width="2" />
+                                <path d="M14 4L9 15h5l-1 9 6-12h-5l1-8z" fill="url(#footerLogoGrad)" />
+                                <defs>
+                                    <linearGradient id="footerLogoGrad" x1="4" y1="4" x2="24" y2="24"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0%" stop-color="#22d3ee" />
+                                        <stop offset="100%" stop-color="#10b981" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span class="logo-text">PowerSense</span>
+                    </a>
+                    <p class="footer-tagline">Every Classroom. Zero Energy Waste.</p>
+                    <p class="footer-desc">Intelligent human presence detection that automatically controls classroom
+                        lights and fans.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Quick Links</h4>
+                    <ul role="list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#problem">The Problem</a></li>
+                        <li><a href="#solution">Solution</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#roi">ROI Calculator</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Company</h4>
+                    <ul role="list">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#impact">Impact</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#contact">Request Demo</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Contact</h4>
+                    <ul role="list">
+                        <li>
+                            <a href="mailto:info@powersense.in">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"
+                                    style="display:inline;margin-right:6px;vertical-align:middle;">
+                                    <path d="M1 3.5L7 7.5l6-4" stroke="#94a3b8" stroke-width="1.3" />
+                                    <rect x="1" y="2" width="12" height="10" rx="2" stroke="#94a3b8"
+                                        stroke-width="1.3" />
+                                </svg>
+                                info@powersense.in
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+919876543210">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"
+                                    style="display:inline;margin-right:6px;vertical-align:middle;">
+                                    <path d="M2 3h2l1 3L3.5 7c1 2.5 2.5 4 5 5L10 10.5l3 1v2C6 15 -1 8 2 3z"
+                                        stroke="#94a3b8" stroke-width="1.2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                +91 98765 43210
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer-social">
+                        <a href="#" class="social-btn" aria-label="Twitter/X">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.259 5.626zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-btn" aria-label="LinkedIn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-btn" aria-label="Instagram">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copy">
+                    &copy; 2026 PowerSense Technologies. All rights reserved.
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <path d="M9 14V4M4 9l5-5 5 5" stroke="white" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </button>
+
+    <!-- Script -->
+    <script src="Scrpit.js"></script>
+</body>
+
+</html>
